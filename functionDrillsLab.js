@@ -113,6 +113,7 @@ function faveColorFinder(color){
   }
   
 }
+let colorRating = faveColorFinder('green');
 
 
 ////////////////// PROBLEM 7 ////////////////////
