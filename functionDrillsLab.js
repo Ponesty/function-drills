@@ -246,9 +246,9 @@ console.log(emailCheck("my foot@ g m a i l.com"));
 
 //CODE HERE
 function frogMeat(gold){
-  return Math.round(gold/3);
+  return gold/3;
 }
-let totalFrogs = frogMeat(4);
+let totalFrogs = frogMeat(15);
 console.log(totalFrogs);
 
 
@@ -258,6 +258,11 @@ console.log(totalFrogs);
 */
 
 //CODE HERE
+function frogMeat2(gold){
+  return Math.round(gold/3);
+}
+let totalFrogs2 = frogMeat2(4);
+console.log(totalFrogs2);
 
 
 ////////////////// PROBLEM 15 ////////////////////
