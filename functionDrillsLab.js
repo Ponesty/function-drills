@@ -226,7 +226,8 @@ upper(sampleString);
 
 function emailCheck(email){
   email = String(email);
-   email = email.replace(/ /g, '');
+   //email = email.replace(/ /g, '');
+   email = email.trim();
   //console.log(email);
   if(email.includes('@')=== true){
     return 'email verified';
@@ -235,8 +236,8 @@ function emailCheck(email){
     return 'must provide a valid email address';
   }
 }
-emailCheck("w ater ba llo n @ gmail.com");
-console.log(emailCheck("my foot@ g m a i l.com"));
+//emailCheck("w ater ba llo n @ gmail.com");
+console.log(emailCheck("myfoot@gmail.com"));
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
@@ -272,8 +273,15 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
-
-
+function welp(arr){
+  if(arr.sort(function(a,b){return a-b}) === true){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+let arrayIsArray
 ////////////////// PROBLEM 16 ////////////////////
 
 let duck = "cute";
