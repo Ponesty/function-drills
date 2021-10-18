@@ -245,6 +245,11 @@ console.log(emailCheck("my foot@ g m a i l.com"));
 */
 
 //CODE HERE
+function frogMeat(gold){
+  return Math.round(gold/3);
+}
+let totalFrogs = frogMeat(4);
+console.log(totalFrogs);
 
 
 ////////////////// PROBLEM 14 ////////////////////
