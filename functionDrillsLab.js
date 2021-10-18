@@ -196,8 +196,8 @@ function theEliminator(arr,loser){
   }
   return arr;
 }
-console.log(contestants);
-console.log(theEliminator(contestants,loser));
+// console.log(contestants);
+// console.log(theEliminator(contestants,loser));
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -208,7 +208,10 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
-
+function upper(word){
+  console.log(word.toUpperCase());
+}
+upper(sampleString);
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -220,6 +223,20 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+function emailCheck(email){
+  email = String(email);
+   email = email.replace(/ /g, '');
+  //console.log(email);
+  if(email.includes('@')=== true){
+    return 'email verified';
+  }
+  else{
+    return 'must provide a valid email address';
+  }
+}
+emailCheck("w ater ba llo n @ gmail.com");
+console.log(emailCheck("my foot@ g m a i l.com"));
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
