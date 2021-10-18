@@ -268,20 +268,23 @@ console.log(totalFrogs2);
 
 ////////////////// PROBLEM 15 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+//let sampleArray2 = [0,1,2,3,4,5,6,7,8,9];
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
 //CODE HERE
 function welp(arr){
-  if(arr.sort(function(a,b){return a-b}) === true){
-    return true;
+  let boo = true;
+  for(let i =0; i< arr.length;i++){
+    if(arr[i]>arr[i+1]){
+      boo = false;
+    }
   }
-  else{
-    return false;
-  }
+  return boo;
 }
-let arrayIsArray
+let arrayIsAscending = welp(sampleArray);
+console.log(arrayIsAscending);
 ////////////////// PROBLEM 16 ////////////////////
 
 let duck = "cute";
